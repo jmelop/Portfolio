@@ -1,11 +1,11 @@
 import React from "react";
 import '../../App.css';
-import Blogs from "../Posts";
+import Posts from "../Posts";
 
 function Blog() {
     return (
         <>
-            <Blogs />
+            <Posts />
         </>
     )
 }
