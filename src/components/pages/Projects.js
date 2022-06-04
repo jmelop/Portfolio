@@ -1,6 +1,6 @@
 import React from "react";
 import '../../App.css';
-import Publications from "../Publications";
+import Publications from "../publications/Publications";
 
 function Projects() {
     return (

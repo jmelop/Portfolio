@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import './Post.css';
 
 function Post() {
     return (

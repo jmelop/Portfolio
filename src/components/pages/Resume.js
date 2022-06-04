@@ -1,6 +1,6 @@
 import React from "react";
 import '../../App.css';
-import MainSection from "../MainSection";
+import MainSection from "../mainSection/MainSection";
 
 function Resume() {
     return (

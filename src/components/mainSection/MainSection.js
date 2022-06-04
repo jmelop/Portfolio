@@ -1,5 +1,4 @@
 import React from "react";
-import '../App.css';
 import './MainSection.css';
 
 function MainSection() {
