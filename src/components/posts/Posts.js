@@ -5,7 +5,7 @@ function Posts() {
     return (
         <>
             <div className="px-6 my-16">
-                <div className="relative max-w-2xl mx-auto">
+                <div className="relative max-w-5xl mx-auto">
                     <div className="p-8">
                         <h1 className="text-white text-5xl font-bold">Blog</h1>
                     </div>
