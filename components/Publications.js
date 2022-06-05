@@ -1,5 +1,8 @@
 import React from "react";
 import Publication from "./Publication";
+import CryptoKeeper from "../public/assets/projects/project1.png"
+import Quizz from "../public/assets/projects/project2.png"
+import Raptor from "../public/assets/projects/project3.png"
 
 function Publications() {
     return (
@@ -13,21 +16,21 @@ function Publications() {
                         <div className="relative inline-grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
                             <div>
                                 <Publication
-                                    src="/../public/images/projects/project1.png"
+                                    src={CryptoKeeper}
                                     title="CryptoKeeper"
                                     description="Open source app that allow to save your crypto data and check the market in real live."
                                 />
                             </div>
                             <div>
                                 <Publication
-                                    src="/../public/images/projects/project3.png"
+                                    src={Raptor}
                                     title="Raptor"
                                     description="Raptor is a ecommerce where you can buy the last drones of the market."
                                 />
                             </div>
                             <div>
                                 <Publication
-                                    src="/../public/images/projects/project2.png"
+                                    src={Quizz}
                                     title="Quizz"
                                     description="Quizz will help you to learn new languages. Save your vocabulary and play to learn new words."
                                 />
