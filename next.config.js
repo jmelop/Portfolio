@@ -3,4 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  future: {
+    webpack5: true,
+  },
+  target: 'serverless'
+}
