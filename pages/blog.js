@@ -1,7 +1,6 @@
 import React from "react";
-import './Posts.css';
 
-function Posts() {
+function Blog() {
     return (
         <>
             <div className="px-6 my-16">
@@ -18,4 +17,4 @@ function Posts() {
     )
 }
 
-export default Posts;
+export default Blog;

@@ -1,6 +1,5 @@
 import React from "react";
-import Publication from "../publication/Publication";
-import './Publications.css';
+import Publication from "./Publication";
 
 function Publications() {
     return (
@@ -14,21 +13,21 @@ function Publications() {
                         <div className="relative inline-grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
                             <div>
                                 <Publication
-                                    src="images/projects/project1.png"
+                                    src="/../public/images/projects/project1.png"
                                     title="CryptoKeeper"
                                     description="Open source app that allow to save your crypto data and check the market in real live."
                                 />
                             </div>
                             <div>
                                 <Publication
-                                    src="images/projects/project3.png"
+                                    src="/../public/images/projects/project3.png"
                                     title="Raptor"
                                     description="Raptor is a ecommerce where you can buy the last drones of the market."
                                 />
                             </div>
                             <div>
                                 <Publication
-                                    src="images/projects/project2.png"
+                                    src="/../public/images/projects/project2.png"
                                     title="Quizz"
                                     description="Quizz will help you to learn new languages. Save your vocabulary and play to learn new words."
                                 />

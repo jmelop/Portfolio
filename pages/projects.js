@@ -1,7 +1,5 @@
 import React from "react";
-import '../../App.css';
-import Publications from "../../components/publications/Publications";
-import "./Projects.css"
+import Publications from "../components/Publications";
 
 function Projects() {
     return (

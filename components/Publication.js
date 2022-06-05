@@ -1,22 +1,27 @@
 import React from "react";
-import './Publication.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 function Publication(props) {
     return (
         <>
             <div className="relative w-full bg-white rounded-lg bg-main mb-2">
                 <div className="aspect-h-4 aspect-w-3">
-                    <img className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer" src={props.src} alt="blog" />
+                    <Image width='525'
+                        height='355' className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer" src={props.src} alt="blog" />
                 </div>
                 <div className="px-5 pb-5 border-x-2 border-b-2 border-gray-600 rounded-b-lg">
-                    <a href="/">
+                    <Link href="#">
                         <h5 className="text-xl pt-2 font-semibold tracking-tight text-white">{props.title}</h5>
-                    </a>
+                    </Link>
                     <div className="flex items-center mt-2.5 mb-5">
                         <p className="text-gray-200">{props.description}</p>
                     </div>
-                    <div className="mt-2.5 flex underline underline-offset-2 decoration-sky-500">
-                        <a href="/" className="text-white hover:text-gray-300 mr-1 font-semibold">Learn more</a>
+                    <div className="mt-2.5 flex">
+                        <Link href="#">
+                            <a className="text-white hover:text-gray-300 mr-1 font-semibold underline underline-offset-2 
+                            decoration-sky-500">Learn more</a>
+                        </Link>
                         <svg
                             width="24"
                             height="24"
