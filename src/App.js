@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Resume from './components/pages/Resume';
-import Projects from './components/pages/Projects';
-import Blog from './components/pages/Blog';
+import Resume from './pages/resume/Resume';
+import Projects from './pages/projects/Projects';
+import Blog from './pages/blog/Blog';
 import Navbar from './components/navbar/Navbar';
 
 function App() {

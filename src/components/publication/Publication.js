@@ -16,7 +16,7 @@ function Publication(props) {
                         <p className="text-gray-200">{props.description}</p>
                     </div>
                     <div className="mt-2.5 flex underline underline-offset-2 decoration-sky-500">
-                        <a href="www" className="text-white hover:text-gray-300 mr-1 font-semibold">Learn more</a>
+                        <a href="/" className="text-white hover:text-gray-300 mr-1 font-semibold">Learn more</a>
                         <svg
                             width="24"
                             height="24"
