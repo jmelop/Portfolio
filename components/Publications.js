@@ -1,8 +1,8 @@
 import React from "react";
 import Publication from "./Publication";
-import CryptoKeeper from "../public/assets/projects/project1.png"
-import Quizz from "../public/assets/projects/project2.png"
-import Raptor from "../public/assets/projects/project3.png"
+import CryptoKeeper from "../public/assets/projects/crypto.png"
+import Quizz from "../public/assets/projects/quizz.png"
+import Raptor from "../public/assets/projects/raptor.png"
 
 function Publications() {
     return (
