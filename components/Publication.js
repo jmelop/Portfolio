@@ -6,13 +6,14 @@ function Publication(props) {
     return (
         <>
             <div className="relative w-full bg-white rounded-lg bg-main mb-2">
-                <div className="aspect-h-4 aspect-w-3">
+                <div className="-mb-2">
                     <Image width='525'
-                        height='355' className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer" src={props.src} alt="blog" />
+                        height='355' className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
+                        src={props.src} alt="blog" priority />
                 </div>
                 <div className="px-5 pb-5 border-x-2 border-b-2 border-gray-600 rounded-b-lg">
                     <Link href="#">
-                        <h5 className="text-xl pt-2 font-semibold tracking-tight text-white">{props.title}</h5>
+                        <h5 className="text-xl pt-4 font-semibold tracking-tight text-white">{props.title}</h5>
                     </Link>
                     <div className="flex items-center mt-2.5 mb-5">
                         <p className="text-gray-200">{props.description}</p>

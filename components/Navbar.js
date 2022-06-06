@@ -50,7 +50,8 @@ function Navbar() {
                                 {navigation.pages.map((page) => (
                                     <div key={page.name} className="flow-root">
                                         <Link href={page.href}>
-                                            <a className="-m-2 p-2 block font-medium text-gray-900 underline decoration-sky-500 underline-offset-4">
+                                            <a className="-m-2 p-2 block font-medium text-gray-900 underline decoration-sky-500 underline-offset-4"
+                                                onClick={() => setOpen(false)}>
                                                 {page.name}
                                             </a>
                                         </Link>

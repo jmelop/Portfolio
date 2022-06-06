@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Posts from './blog'
 import Resume from './resume'
 
 export default function Home() {
