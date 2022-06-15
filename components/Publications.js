@@ -1,10 +1,11 @@
 import React from "react";
 import Publication from "./Publication";
-import CryptoKeeper from "../public/assets/projects/crypto.png"
-import Quizz from "../public/assets/projects/quizz.png"
-import Raptor from "../public/assets/projects/raptor.png"
+import CryptoKeeper from "../public/assets/projects/crypto.png";
+import Quizz from "../public/assets/projects/quizz.png";
+import Raptor from "../public/assets/projects/raptor.png";
+import { getAllFilesMetadata } from "../lib/mdx";
 
-function Publications() {
+export default function Publications({ posts }) {
     return (
         <>
             <div className="px-6 my-16">
@@ -43,4 +44,9 @@ function Publications() {
     )
 }
 
-export default Publications;
+export async function getStaticProps() {
+    const posts = await getAllFilesMetadata();
+    return {
+        props: { posts },
+    }
+}
