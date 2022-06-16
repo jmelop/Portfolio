@@ -7,19 +7,21 @@ function Publication(props) {
         <>
             <div className="relative w-full bg-white rounded-lg bg-main mb-2">
                 <div className="-mb-2">
-                    <Image width='525'
-                        height='355' className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
-                        src={props.src} alt="blog" priority />
+                    <Link href={props.href}>
+                        <Image width='525'
+                            height='355' className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
+                            src={props.src} alt="blog" priority />
+                    </Link>
                 </div>
                 <div className="px-5 pb-5 border-x-2 border-b-2 border-gray-600 rounded-b-lg">
-                    <Link href="#">
-                        <h5 className="text-xl pt-4 font-semibold tracking-tight text-white">{props.title}</h5>
+                    <Link href={props.href}>
+                        <h5 className="text-xl pt-4 font-semibold tracking-tight text-white cursor-pointer">{props.title}</h5>
                     </Link>
                     <div className="flex items-center mt-2.5 mb-5">
                         <p className="text-gray-200">{props.description}</p>
                     </div>
                     <div className="mt-2.5 flex">
-                        <Link href="#">
+                        <Link href={props.href}>
                             <a className="text-white hover:text-gray-300 mr-1 font-semibold underline underline-offset-2 
                             decoration-sky-500">Learn more</a>
                         </Link>
