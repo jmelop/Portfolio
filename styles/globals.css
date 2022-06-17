@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .mdx h1 {
+    @apply text-5xl;
+    @apply text-white;
+    @apply font-bold;
+    @apply p-8;
+    @apply text-left;
+  }
+
+  .mdx p {
+    @apply text-base;
+    @apply text-white;
+    @apply m-16
+  }
+}
+
 html,
 body {
   padding: 0;

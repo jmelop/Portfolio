@@ -11,7 +11,7 @@ export default function Publications({ projects }) {
                     </div>
                     <div className="mt-16">
                         <div className="relative inline-grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
-                            {projects.map(project => (
+                            {projects.map((project) => (
                                 <Publication
                                     key={project.slug}
                                     src={project.banner}
