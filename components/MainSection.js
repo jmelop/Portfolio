@@ -25,7 +25,7 @@ function MainSection() {
                         </div>
                         <div className="mt-12 text-gray-300">
                             <span>Find me on </span>
-                            <Link href="https://github.com/juanmlp">
+                            <Link href="https://github.com/jmelop">
                                 <a target="_blank" rel="noreferrer"
                                     className="text-white underline decoration-sky-500 hover:text-gray-300">Github,</a>
                             </Link>
