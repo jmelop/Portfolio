@@ -91,7 +91,7 @@ function Navbar() {
                                 <div className="hidden lg:ml-4 lg:flex justify-center mb-4"></div>
                                 <div className="flex items-center pb-2 mb-6 w-full border-b border-gray-200">
                                     <div className="flex lg:flex-1 ml-auto lg:items-center lg:justify-end space-x-4">
-                                        <Link href="https://github.com/juanmlp">
+                                        <Link href="https://github.com/jmelop">
                                             <a target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-200 hover:text-gray-400">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github"
                                                     viewBox="0 0 16 16">
