@@ -19,7 +19,7 @@ export const Carousel = (props) => {
     <div>
       <Swiper
         slidesPerView={2}
-        spaceBetween={30}
+        spaceBetween={20}
         navigation={true}
         centeredSlides={false}
         pagination={{
@@ -30,7 +30,7 @@ export const Carousel = (props) => {
       >
         {project?.screenshots?.map((slide, index) => (
           <SwiperSlide key={index} className="rounded-md">
-            <Image className="rounded-md" width='525' height='355' src={slide} alt="blog" />
+            <Image className="rounded-md" width='640' height='360' src={slide} alt="blog" />
           </SwiperSlide>
         ))}
       </Swiper>

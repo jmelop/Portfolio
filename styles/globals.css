@@ -80,6 +80,9 @@ a {
   -o-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
+  object-fit: cover;
+  justify-content: center;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .swiper-slide img:active {
