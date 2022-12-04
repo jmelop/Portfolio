@@ -11,10 +11,19 @@
     @apply text-left;
   }
 
+  .mdx h3 {
+    @apply text-2xl;
+    @apply text-white;
+    @apply font-bold;
+    @apply py-8;
+    @apply text-left;
+  }
+
   .mdx p {
     @apply text-base;
+    @apply text-justify;
     @apply text-white;
-    @apply m-16
+    @apply m-16;
   }
 }
 
@@ -34,4 +43,50 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.swiper-slide img:active {
+  cursor: grab;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }

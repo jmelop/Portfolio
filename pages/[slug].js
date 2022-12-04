@@ -6,7 +6,7 @@ export default function Project({ source, frontmatter }) {
     return (
         <div className="px-6 my-16 mdx">
             <div className="relative max-w-5xl mx-auto text-center">
-                <MDXRemote {...source} />
+                <MDXRemote {...source} components={MDXComponents} />
             </div>
         </div>
     )
