@@ -18,7 +18,7 @@ export const Carousel = (props) => {
   return (
     <div>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={"auto"}
         spaceBetween={20}
         navigation={true}
         centeredSlides={false}

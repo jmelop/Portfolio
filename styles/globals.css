@@ -54,6 +54,7 @@ a {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  width: 640px !important;
 
   /* Center slide text vertically */
   display: -webkit-box;
