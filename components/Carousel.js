@@ -31,7 +31,7 @@ export const Carousel = (props) => {
       >
         {project?.screenshots?.map((slide, index) => (
           <SwiperSlide key={index} className={isMobile ? "" : "swiper-slide-desktop"}>
-            <Image className="rounded-md" width='640' height='360' src={slide} alt="blog" />
+            <Image priority className="rounded-md" width='640' height='360' src={slide} alt="blog" />
           </SwiperSlide>
         ))}
       </Swiper>
