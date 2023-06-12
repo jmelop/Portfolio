@@ -1,5 +1,5 @@
 import { Carousel } from "./Carousel";
 
-export default {
-    Carousel,
-}
+const exportedCarousel = { Carousel };
+
+export default exportedCarousel;
