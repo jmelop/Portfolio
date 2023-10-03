@@ -14,7 +14,7 @@ module.exports = {
     return config;
   },
   images: {
-    domains: ['firebasestorage.googleapis.com'],
+    domains: ['firebasestorage.googleapis.com', 'jmelop.com'],
     formats: ['image/avif', 'image/webp']
   },
 };
