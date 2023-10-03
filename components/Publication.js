@@ -1,7 +1,6 @@
 import React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import raptorImage from '../public/dummies/images/banners_raptor.png';
 
 function Publication(props) {
     return <>
@@ -10,7 +9,7 @@ function Publication(props) {
                 <Link href={props.href} legacyBehavior>
                     <Image width='525'
                         height='355' className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
-                        src={props.title !== 'Raptor' ? props.src : raptorImage} alt="blog" priority />
+                        src={props.src} alt="blog" priority />
                 </Link>
             </div>
             <div className="px-5 pb-5 border-x-2 border-b-2 border-gray-600 rounded-b-lg">
