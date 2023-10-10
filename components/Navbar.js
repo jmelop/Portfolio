@@ -178,7 +178,7 @@ function Navbar() {
 
                                         </Link>
                                     </div>
-                                    <div className="ml-8 flex">
+                                    {/* <div className="ml-8 flex">
                                         <Link
                                             href="/"
                                             target="_blank"
@@ -199,7 +199,7 @@ function Navbar() {
                                             </svg>
 
                                         </Link>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
