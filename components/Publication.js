@@ -6,11 +6,12 @@ function Publication(props) {
     return <>
         <div className="relative w-full rounded-lg bg-main mb-2">
             <div className="-mb-2">
-                <Link href={props.href} legacyBehavior>
-                    <Image width='525'
-                        height='355' className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
-                        src={props.src} alt="blog" priority />
-                </Link>
+                <div style={{ position: "relative", width: "100%", paddingBottom: "60%" }} >
+                    <Link href={props.href} legacyBehavior>
+                        <Image fill className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
+                            src={props.src} alt="blog" priority />
+                    </Link>
+                </div>
             </div>
             <div className="px-5 pb-5 border-x-2 border-b-2 border-gray-600 rounded-b-lg">
                 <Link href={props.href} legacyBehavior>

@@ -30,8 +30,10 @@ export const Carousel = (props) => {
         className="mySwiper"
       >
         {project?.screenshots?.map((slide, index) => (
-          <SwiperSlide key={index} className={isMobile ? "" : "swiper-slide-desktop"}>
-            <Image priority className="rounded-md" width='640' height='360' src={slide} alt="blog" />
+          <SwiperSlide key={index} className={isMobile ? "" : "swiper-slide-desktop" }>
+            <div style={{ position: "relative", width: "100%", paddingBottom: "60%" }} >
+              <Image priority className="rounded-md" fill src={slide} alt="blog" />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
