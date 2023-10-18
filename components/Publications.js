@@ -4,6 +4,10 @@ import Publication from "./Publication";
 export default function Publications({ projects }) {
     return (
         <>
+            <meta
+                name="description"
+                content="Explore a collection of Angular and React projects on this index page. Discover web 
+                applications, components, and tools developed by Juan Melo." />
             <div className="px-6 my-16">
                 <div className="relative max-w-5xl mx-auto">
                     <div className="p-8">
