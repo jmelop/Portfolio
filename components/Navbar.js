@@ -53,9 +53,7 @@ function Navbar() {
                                             href={page.href}
                                             className="-m-2 p-2 block font-medium text-gray-900 underline decoration-sky-500 underline-offset-4"
                                             onClick={() => setOpen(false)}>
-
                                             {page.name}
-
                                         </Link>
                                     </div>
                                 ))}
@@ -98,8 +96,8 @@ function Navbar() {
                                             href="https://github.com/jmelop"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="text-sm font-medium text-gray-200 hover:text-gray-400">
-
+                                            className="text-sm font-medium text-gray-200 hover:text-gray-400"
+                                            aria-label="Github">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github"
                                                 viewBox="0 0 16 16">
                                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
@@ -109,7 +107,6 @@ function Navbar() {
                                             2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 
                                             3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                                             </svg>
-
                                         </Link>
                                         <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                                     </div>
@@ -118,8 +115,8 @@ function Navbar() {
                                             href="https://www.linkedin.com/in/juan-melo-p%C3%A9rez"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="text-sm font-medium text-gray-200 hover:text-gray-400">
-
+                                            className="text-sm font-medium text-gray-200 hover:text-gray-400"
+                                            aria-label="Linkedin">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-linkedin"
                                                 viewBox="0 0 16 16">
                                                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 
@@ -129,7 +126,6 @@ function Navbar() {
                                             0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 
                                             1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                                             </svg>
-
                                         </Link>
                                     </div>
                                     <div className="ml-4 flex">
@@ -137,8 +133,8 @@ function Navbar() {
                                             href="https://www.instagram.com/jmelopdev/"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="text-sm font-medium text-gray-200 hover:text-gray-400">
-
+                                            className="text-sm font-medium text-gray-200 hover:text-gray-400"
+                                            aria-label="Instagram">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-instagram"
                                                 viewBox="0 0 16 16">
                                                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 
@@ -156,7 +152,6 @@ function Navbar() {
                                             1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 
                                             4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                                             </svg>
-
                                         </Link>
                                     </div>
                                     <div className="ml-4 flex">
@@ -164,8 +159,8 @@ function Navbar() {
                                             href="https://twitter.com/jmelop_"
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="text-sm font-medium text-gray-200 hover:text-gray-400">
-
+                                            className="text-sm font-medium text-gray-200 hover:text-gray-400"
+                                            aria-label="Twitter">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-twitter"
                                                 viewBox="0 0 16 16">
                                                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 
@@ -175,7 +170,6 @@ function Navbar() {
                                             3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0
                                             0 5.026 15z" />
                                             </svg>
-
                                         </Link>
                                     </div>
                                     {/* <div className="ml-8 flex">
