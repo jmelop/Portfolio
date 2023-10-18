@@ -34,7 +34,8 @@ function MainSection() {
                             href="https://github.com/jmelop"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-white underline decoration-sky-500 hover:text-gray-300">
+                            className="text-white underline decoration-sky-500 hover:text-gray-300"
+                            aria-label="Github">
                             Github,
                         </Link>
                         <span>{' '}</span>
@@ -42,7 +43,8 @@ function MainSection() {
                             href="https://www.linkedin.com/in/juan-melo-p%C3%A9rez"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-white underline decoration-sky-500 hover:text-gray-300">
+                            className="text-white underline decoration-sky-500 hover:text-gray-300"
+                            aria-label="Linkedin">
                             Linkedin,
                         </Link>
                         <span>{' '}</span>
@@ -50,7 +52,8 @@ function MainSection() {
                             href="https://www.instagram.com/jmelopdev/"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-white underline decoration-sky-500 hover:text-gray-300">
+                            className="text-white underline decoration-sky-500 hover:text-gray-300"
+                            aria-label="Instagram">
                             Instagram,
                         </Link>
                         <span>{' '}</span>
@@ -58,7 +61,8 @@ function MainSection() {
                             href="https://twitter.com/jmelop_"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-white underline decoration-sky-500 hover:text-gray-300">
+                            className="text-white underline decoration-sky-500 hover:text-gray-300"
+                            aria-label="Twitter">
                             Twitter
                         </Link>
                         <span>{' '}</span>
