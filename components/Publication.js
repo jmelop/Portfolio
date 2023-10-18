@@ -14,7 +14,7 @@ function Publication(props) {
                 </div>
             </div>
             <div className="px-5 pb-5 border-x-2 border-b-2 border-gray-600 rounded-b-lg">
-                <Link aria-label="Learn more" href={props.href} legacyBehavior>
+                <Link aria-label={props.title} href={props.href} legacyBehavior>
                     <h5 className="text-xl pt-4 font-semibold tracking-tight text-white cursor-pointer">{props.title}</h5>
                 </Link>
                 <div className="flex items-center mt-2.5 mb-5">

@@ -1,8 +1,15 @@
+import Head from "next/head";
 import React from "react";
 
 function Blog() {
     return (
         <>
+            <Head>
+                <title>Blog</title>
+                <meta
+                    name="description"
+                    content="Explore a collection of blogs articles on this index page by Juan Melo." />
+            </Head>
             <div className="px-6 my-16">
                 <div className="relative max-w-5xl mx-auto">
                     <div className="p-8">

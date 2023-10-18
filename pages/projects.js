@@ -8,6 +8,10 @@ export default function Projects({ projects }) {
         <>
             <Head>
                 <title>Projects</title>
+                <meta
+                    name="description"
+                    content="Explore a collection of Angular and React projects on this index page. Discover web 
+                applications, components, and tools developed by Juan Melo." />
             </Head>
             <Publications projects={projects} />
         </>
