@@ -7,14 +7,14 @@ function Publication(props) {
         <div className="relative w-full rounded-lg bg-main mb-2">
             <div className="-mb-2">
                 <div style={{ position: "relative", width: "100%", paddingBottom: "60%" }} >
-                    <Link aria-label={props.title} href={props.href} legacyBehavior>
+                    <Link aria-label="Learn more" href={props.href} legacyBehavior>
                         <Image fill className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
                             src={props.src} alt="blog" priority />
                     </Link>
                 </div>
             </div>
             <div className="px-5 pb-5 border-x-2 border-b-2 border-gray-600 rounded-b-lg">
-                <Link aria-label={props.title} href={props.href} legacyBehavior>
+                <Link aria-label="Learn more" href={props.href} legacyBehavior>
                     <h5 className="text-xl pt-4 font-semibold tracking-tight text-white cursor-pointer">{props.title}</h5>
                 </Link>
                 <div className="flex items-center mt-2.5 mb-5">
@@ -22,7 +22,7 @@ function Publication(props) {
                 </div>
                 <div className="mt-2.5 flex">
                     <Link
-                        aria-label={props.title}
+                        aria-label="Learn more"
                         href={props.href}
                         className="text-white hover:text-gray-300 mr-1 font-semibold underline underline-offset-2 
                         decoration-sky-500">
