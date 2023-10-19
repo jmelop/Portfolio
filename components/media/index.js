@@ -2,7 +2,6 @@ export const projects = [
   {
     title: 'CryptoKeeper',
     slug: 'cryptokeeper',
-    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-4bb89.appspot.com/o/Projects%2Fbanner.png?alt=media&token=e566b0ba-3081-41ea-9900-497d9f37aa42',
     website: 'https://github.com/jmelop/CryptoKeeperFront',
     description:
       'Open source app that allow you to save your crypto data and check the market in real live. The app has multiple charts to check your monthly purchases or the value of your portfolio.',
@@ -23,7 +22,6 @@ export const projects = [
   {
     title: 'Quizz',
     slug: 'quizz',
-    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-4bb89.appspot.com/o/banners%2Fquizz.png?alt=media&token=e8a74ae3-0ab1-4d6a-a822-264216afabb4',
     website: 'https://github.com/jmelop/Quizz',
     description:
       'Quizz will help you to learn new languages. Save your vocabulary and play to learn new words.',
@@ -45,7 +43,6 @@ export const projects = [
   {
     title: 'Raptor',
     slug: 'raptor',
-    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-4bb89.appspot.com/o/banners%2Fraptor.png?alt=media&token=6907431c-e76f-4c68-bc27-e6cc877b3efa',
     website: 'https://github.com/jmelop/Raptor',
     description:
       'Raptor is a ecommerce where you can buy the last drones of the market.',
