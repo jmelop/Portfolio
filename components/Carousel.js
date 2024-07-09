@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { projects } from "./media";
-import { Pagination } from "swiper";
-import { Navigation } from "swiper";
+import { Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import React from 'react';
 import { isMobile } from 'react-device-detect';
@@ -32,7 +32,8 @@ export const Carousel = (props) => {
         {project?.screenshots?.map((slide, index) => (
           <SwiperSlide key={index} className={isMobile ? "" : "swiper-slide-desktop" }>
             <div style={{ position: "relative", width: "100%", paddingBottom: "60%" }} >
-              <Image priority className="rounded-md" fill src={slide} alt="blog" />
+              <Image priority className="rounded-md" fill src={slide} 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="blog" />
             </div>
           </SwiperSlide>
         ))}

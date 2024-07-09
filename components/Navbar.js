@@ -1,6 +1,5 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link';
 
 const navigation = {
@@ -16,9 +15,10 @@ function Navbar() {
     return (
         <div className="">
             {/* Mobile menu */}
-            <Transition.Root show={open} as={Fragment}>
+            <Transition show={open} as={Fragment}>
                 <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setOpen}>
-                    <Transition.Child
+                    <Transition
+                        show={open}
                         as={Fragment}
                         enter="transition-opacity ease-linear duration-300"
                         enterFrom="opacity-0"
@@ -26,10 +26,11 @@ function Navbar() {
                         leave="transition-opacity ease-linear duration-300"
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0">
-                        <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
-                    </Transition.Child>
-                    <Transition.Child
+                        <Dialog className="fixed inset-0 bg-black bg-opacity-25" onClose={setOpen} />
+                    </Transition>
+                    <Transition
                         as={Fragment}
+                        show={open}
                         enter="transition ease-in-out duration-300 transform"
                         enterFrom="-translate-x-full"
                         enterTo="translate-x-0"
@@ -43,7 +44,9 @@ function Navbar() {
                                     className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
                                     onClick={() => setOpen(false)}>
                                     <span className="sr-only">Close menu</span>
-                                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                        </svg>
                                 </button>
                             </div>
                             <div className="border-t border-gray-200 py-6 px-4 space-y-6">
@@ -59,9 +62,9 @@ function Navbar() {
                                 ))}
                             </div>
                         </div>
-                    </Transition.Child>
+                    </Transition>
                 </Dialog>
-            </Transition.Root>
+            </Transition>
             <header className="relative bg-main">
                 <nav aria-label="Top" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="h-16 flex items-center">
@@ -70,11 +73,13 @@ function Navbar() {
                             className="bg-white p-2 rounded-md text-gray-400 lg:hidden"
                             onClick={() => setOpen(true)}>
                             <span className="sr-only">Open menu</span>
-                            <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
                         </button>
                         <div className='relative w-full'>
                             <div className='grid grid-cols-1 mt-10 gap-x-4 md:grid-cols-1 lg:grid-cols-3 px-4'>
-                                <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch mb-4 border-b border-gray-200">
+                                <Popover className="hidden lg:ml-8 lg:block lg:self-stretch mb-4 border-b border-gray-200">
                                     <div className="h-full flex space-x-8">
                                         {navigation.pages.map((page) => (
                                             <div key={page.name} className="flow-root">
@@ -88,7 +93,7 @@ function Navbar() {
                                             </div>
                                         ))}
                                     </div>
-                                </Popover.Group>
+                                </Popover>
                                 <div className="hidden lg:ml-4 lg:flex justify-center mb-4"></div>
                                 <div className="flex items-center pb-2 mb-6 w-full border-b border-gray-200">
                                     <div className="flex lg:flex-1 ml-auto lg:items-center lg:justify-end space-x-4">

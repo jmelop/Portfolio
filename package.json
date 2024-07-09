@@ -10,25 +10,25 @@
     "export": "next export"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.4",
-    "@heroicons/react": "^1.0.6",
+    "@headlessui/react": "^2.1.2",
+    "@heroicons/react": "^2.1.4",
     "gray-matter": "^4.0.3",
-    "next": "^13.4.5",
-    "next-mdx-remote": "^4.0.3",
-    "react": "^18.2.0",
-    "react-device-detect": "^2.2.2",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "react-tsparticles": "^2.5.3",
-    "sharp": "^0.30.7",
-    "swiper": "^8.2.4",
-    "tsparticles": "^2.5.3"
+    "next": "^14.2.4",
+    "next-mdx-remote": "^4.4.1",
+    "react": "^18.3.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+    "@tsparticles/react": "^3.0.0",
+    "sharp": "^0.33.4",
+    "swiper": "^11.1.4",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.17.0",
-    "eslint-config-next": "^13.4.5",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24"
+    "autoprefixer": "^10.4.19",
+    "eslint": "8.0.0",
+    "eslint-config-next": "^14.2.4",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
   }
 }

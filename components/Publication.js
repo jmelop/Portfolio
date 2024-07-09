@@ -9,7 +9,8 @@ function Publication(props) {
                 <div style={{ position: "relative", width: "100%", paddingBottom: "60%" }} >
                     <Link aria-label="Learn more" href={`/projects/${props.href}`} legacyBehavior>
                         <Image fill className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
-                            src={props.src[0]} alt="blog" priority placeholder="blur" blurDataURL={props.src[0]} />
+                            src={props.src[0]} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            alt="blog" priority placeholder="blur" blurDataURL={props.src[0]} />
                     </Link>
                 </div>
             </div>
