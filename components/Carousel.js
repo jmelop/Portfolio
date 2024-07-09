@@ -7,9 +7,11 @@ import React from "react";
 import { isMobile } from "react-device-detect";
 import "swiper/css";
 import "swiper/css/pagination";
+import cn from "clsx";
 
 export const Carousel = (props) => {
   const [project, setProject] = React.useState([]);
+  const [isLoading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     const selectProject = projects.find(
@@ -45,7 +47,13 @@ export const Carousel = (props) => {
             >
               <Image
                 priority
-                className="rounded-md"
+                className={cn(
+                  "duration-700 ease-in-out",
+                  isLoading
+                    ? "grayscale blur-2xl scale-110 rounded-md"
+                    : "grayscale-0 blur-0 scale-100 rounded-md"
+                )}
+                onLoadingComplete={() => setLoading(false)}
                 fill
                 src={slide}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
