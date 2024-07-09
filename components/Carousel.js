@@ -3,8 +3,8 @@ import { projects } from "./media";
 import { Pagination } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
-import React from 'react';
-import { isMobile } from 'react-device-detect';
+import React from "react";
+import { isMobile } from "react-device-detect";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -12,7 +12,9 @@ export const Carousel = (props) => {
   const [project, setProject] = React.useState([]);
 
   React.useEffect(() => {
-    const selectProject = projects.find(selectProject => selectProject.title === props.title);
+    const selectProject = projects.find(
+      (selectProject) => selectProject.title === props.title
+    );
     setProject(selectProject);
   }, [props.title]);
 
@@ -30,14 +32,29 @@ export const Carousel = (props) => {
         className="mySwiper"
       >
         {project?.screenshots?.map((slide, index) => (
-          <SwiperSlide key={index} className={isMobile ? "" : "swiper-slide-desktop" }>
-            <div style={{ position: "relative", width: "100%", paddingBottom: "60%" }} >
-              <Image priority className="rounded-md" fill src={slide} 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="blog" />
+          <SwiperSlide
+            key={index}
+            className={isMobile ? "" : "swiper-slide-desktop"}
+          >
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                paddingBottom: "60%",
+              }}
+            >
+              <Image
+                priority
+                className="rounded-md"
+                fill
+                src={slide}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                alt="blog"
+              />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-  )
-}
+  );
+};
