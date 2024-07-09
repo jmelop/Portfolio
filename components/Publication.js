@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import cn from "clsx";
 
 function Publication(props) {
+  const [isLoading, setLoading] = React.useState(true);
+
   return (
     <>
       <div className="relative w-full rounded-lg bg-main mb-2">
@@ -19,14 +22,20 @@ function Publication(props) {
               href={`/projects/${props.href}`}
               legacyBehavior
             >
-              <Image
-                fill
-                className="rounded-t-lg object-cover w-full h-80 m-auto cursor-pointer"
-                src={props.src[0]}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                alt="blog"
-                priority
-              />
+                <Image
+                  fill
+                  className={cn(
+                    "duration-700 ease-in-out bg-white/30",
+                    isLoading
+                      ? "grayscale blur backdrop-blur rounded-md"
+                      : "grayscale-0 blur-0 rounded-md"
+                  )}
+                  onLoadingComplete={() => setLoading(false)}
+                  src={props.src[0]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="blog"
+                  priority
+                />
             </Link>
           </div>
         </div>
