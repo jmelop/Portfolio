@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
-  future: {
-    webpack5: true,
-  },
   webpack(config) {
     config.resolve.fallback = {
       ...config.resolve.fallback,
@@ -14,7 +11,13 @@ module.exports = {
     return config;
   },
   images: {
-    domains: ['firebasestorage.googleapis.com'],
-    formats: ['image/avif', 'image/webp']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'firebasestorage.googleapis.com',
+        port: '',
+        pathname: '/v0/b/portfolio-4bb89.appspot.com/o/**',
+      },
+    ],
   },
 };

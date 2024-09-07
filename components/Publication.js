@@ -24,13 +24,6 @@ function Publication(props) {
             >
                 <Image
                   fill
-                  className={cn(
-                    "duration-700 ease-in-out bg-white/30",
-                    isLoading
-                      ? "grayscale blur backdrop-blur rounded-md"
-                      : "grayscale-0 blur-0 rounded-md"
-                  )}
-                  onLoadingComplete={() => setLoading(false)}
                   src={props.src[0]}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt="blog"
