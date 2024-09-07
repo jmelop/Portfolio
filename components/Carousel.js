@@ -47,13 +47,6 @@ export const Carousel = (props) => {
             >
               <Image
                 priority
-                className={cn(
-                  "duration-700 ease-in-out",
-                  isLoading
-                    ? "grayscale blur-2xl scale-110 rounded-md"
-                    : "grayscale-0 blur-0 scale-100 rounded-md"
-                )}
-                onLoadingComplete={() => setLoading(false)}
                 fill
                 src={slide}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
