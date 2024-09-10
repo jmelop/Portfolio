@@ -24,10 +24,11 @@ function Publication(props) {
             >
                 <Image
                   fill
+                  priority
                   src={props.src[0]}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt="blog"
-                  priority
+                  className="rounded-md"
                 />
             </Link>
           </div>
