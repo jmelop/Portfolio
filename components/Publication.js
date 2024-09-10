@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import cn from "clsx";
 
 function Publication(props) {
   const [isLoading, setLoading] = React.useState(true);
@@ -13,8 +12,7 @@ function Publication(props) {
           <div
             style={{
               position: "relative",
-              width: "100%",
-              paddingBottom: "60%",
+              width: "100%"
             }}
           >
             <Link
@@ -22,13 +20,15 @@ function Publication(props) {
               href={`/projects/${props.href}`}
               legacyBehavior
             >
-                <Image
-                  fill
-                  src={props.src[0]}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  alt="blog"
-                  priority
-                />
+              <Image
+                priority
+                {...props.images[0].img}
+                alt={props.title}
+                placeholder='blur'
+                blurDataURL={props.images[0].base64}
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                className="pb-0 rounded-t-lg" 
+              />
             </Link>
           </div>
         </div>
@@ -76,3 +76,5 @@ function Publication(props) {
 }
 
 export default Publication;
+
+{/* <DynamicImage url={'https://firebasestorage.googleapis.com/v0/b/portfolio-4bb89.appspot.com/o/Projects%2Fbanner.png?alt=media&token=e566b0ba-3081-41ea-9900-497d9f37aa42'} alt={'hjhj'} /> */}

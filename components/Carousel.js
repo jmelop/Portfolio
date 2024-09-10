@@ -46,11 +46,12 @@ export const Carousel = (props) => {
               }}
             >
               <Image
-                priority
                 fill
+                priority
                 src={slide}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 alt="blog"
+                className="rounded-md"
               />
             </div>
           </SwiperSlide>
