@@ -18,6 +18,7 @@ export default function Publications({ projects }) {
                                     title={project.title}
                                     description={project.description}
                                     href={project.slug}
+                                    images={project.images}
                                 />
                             ))}
                         </div>
