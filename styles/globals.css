@@ -19,6 +19,13 @@
     @apply text-left;
   }
 
+  .mdx h4 {
+    @apply text-white;
+    @apply font-bold;
+    @apply py-8;
+    @apply text-left;
+  }
+
   .mdx p {
     @apply text-base;
     @apply text-justify;
