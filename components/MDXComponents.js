@@ -1,5 +1,9 @@
 import { Carousel } from "./Carousel";
+import ProjectInfo from "./ProjectInfo";
 
-const exportedCarousel = { Carousel };
+const MDXComponents = {
+  Carousel,
+  ProjectInfo,
+};
 
-export default exportedCarousel;
+export default MDXComponents;

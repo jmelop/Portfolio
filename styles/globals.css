@@ -32,6 +32,11 @@
     @apply text-white;
     @apply m-16;
   }
+
+  .mdx .project-info p {
+    @apply my-0;
+    @apply text-white;
+  }
 }
 
 html,
