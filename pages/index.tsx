@@ -98,24 +98,6 @@ export default function Home() {
             </p>     
           </div>
 
-          <div className="sep" />
-
-          <div className="meta-strip">
-            <div className="meta-item">
-              <span>LOC:</span>
-              <span className="meta-value">Las Palmas, Canary Islands</span>
-            </div>
-            <div className="meta-item">
-              <span>STATUS:</span>
-              <span className="meta-status-available">AVAILABLE</span>
-            </div>
-            <div className="meta-item">
-              <span>EST:</span>
-              <span className="meta-value">2019</span>
-            </div>
-          </div>
-
-          <div className="sep" />
         </main>
       </div>
 
