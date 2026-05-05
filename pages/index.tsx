@@ -92,6 +92,10 @@ export default function Home() {
               TypeScript component system, and exploring new ideas around personal tooling and
               automation.
             </p>
+            <p>
+              I'm particularly interested in designing systems and architectures, building long-term, 
+              scalable solutions, and shaping them into reusable tools and packages.
+            </p>     
           </div>
 
           <div className="sep" />
