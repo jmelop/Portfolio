@@ -1,28 +1,28 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
-import BadgeRow from '../components/BadgeRow';
 
-const GitHubSVG = () => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.572C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+const GitHubSVG = ({ width = 15, height = 15 }: { width?: number; height?: number }) => (
+  <svg viewBox="0 0 16 16" width={width} height={height} fill="currentColor">
+    <path d="M8 .2C3.6.2 0 3.8 0 8.2c0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4v-1.4c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.4.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.2 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 2 .1 2.2.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.6 3.9.3.2.6.7.6 1.5v2.2c0 .2.1.5.5.4 3.2-1.1 5.5-4.1 5.5-7.6C16 3.8 12.4.2 8 .2z" />
   </svg>
 );
 
-const LinkedInSVG = () => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+const LinkedInSVG = ({ width = 15, height = 15 }: { width?: number; height?: number }) => (
+  <svg viewBox="0 0 16 16" width={width} height={height} fill="currentColor">
+    <path d="M14.8 0H1.2C.5 0 0 .5 0 1.2v13.6c0 .7.5 1.2 1.2 1.2h13.6c.7 0 1.2-.5 1.2-1.2V1.2C16 .5 15.5 0 14.8 0zM4.7 13.6H2.4V6h2.4v7.6zM3.6 5c-.8 0-1.4-.6-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4 0 .8-.6 1.4-1.4 1.4zm10 8.6h-2.4V9.9c0-.9 0-2-1.2-2s-1.4.9-1.4 1.9v3.8H6.2V6h2.3v1c.3-.6 1.1-1.2 2.2-1.2 2.4 0 2.8 1.6 2.8 3.6v4.2z" />
   </svg>
 );
 
-const TwitterSVG = () => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+const TwitterSVG = ({ width = 15, height = 15 }: { width?: number; height?: number }) => (
+  <svg viewBox="0 0 16 16" width={width} height={height} fill="currentColor">
+    <path d="M12.6 1H15l-5.2 5.9L16 15h-4.8l-3.7-4.9L3.2 15H.8l5.5-6.3L0 1h4.9l3.4 4.5L12.6 1zm-.8 12.6h1.3L4.3 2.3H2.9l8.9 11.3z" />
   </svg>
 );
 
 const EmailSVG = () => (
-  <svg viewBox="0 0 24 24">
-    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+  <svg viewBox="0 0 16 16" width={13} height={13} fill="currentColor">
+    <path d="M14 3H2c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1zM2 4l6 4 6-4v.7L8 8.7 2 4.7V4z" />
   </svg>
 );
 
@@ -30,115 +30,153 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>jmelop — Juan Melo</title>
-        <meta
-          name="description"
-          content="Frontend Software Engineer building user interfaces for the web."
-        />
+        <title>Juan Melo · jmelop</title>
+        <meta name="description" content="Juan Melo – Software Engineer focused on front-end architecture, systems and developer tooling." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <nav>
-        <div className="nav-inner">
-          <Link href="/" className="nav-brand">jmelop</Link>
-          <div className="nav-right">
-            <ul className="nav-links">
-              <li><Link href="/" className="active">Home</Link></li>
-              <li><Link href="/projects">Projects</Link></li>
-            </ul>
-            <div className="nav-socials">
+      <nav className="nav">
+        <Link className="brand" href="/"><span className="brand-accent">~/</span>jmelop</Link>
+        <div className="nav-right">
+          <ul className="nav-links">
+            <li><Link className="nav-link is-active" href="/">Home</Link></li>
+            <li><Link className="nav-link" href="/projects">Projects</Link></li>
+          </ul>
+          <span className="nav-divider"></span>
+          <ul className="nav-socials">
+            <li>
               <a href="https://github.com/jmelop" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                 <GitHubSVG />
               </a>
+            </li>
+            <li>
               <a href="https://linkedin.com/in/jmelop" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <LinkedInSVG />
               </a>
+            </li>
+            <li>
               <a href="https://x.com/jmelop_" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
                 <TwitterSVG />
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </nav>
 
-      <div className="page">
-        <main>
-          <section className="hero" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <h1 className="hero-name">Juan Melo</h1>
-            <p className="hero-subtitle">Software Engineer focused on front-end architecture, systems and developer tooling.</p>
+      <main className="page">
+        <header className="hero">
+          <h1 className="hero-title">Juan Melo</h1>
+          <p className="hero-tagline">Software Engineer focused on front-end architecture, open-source packages and developer tooling.</p>
+        </header>
 
-            <div className="tag-rows" style={{ alignSelf: 'flex-start', marginLeft: 0, textAlign: 'left' }}>
-              <BadgeRow
-                label="Building"
-                items={[
-                  { name: 'Venator UI' },
-                  { name: 'Enclave' },
-                ]}
-              />
-              <BadgeRow
-                label="Published"
-                items={[{ name: 'es-regional-holidays' }]}
-              />
-            </div>
-          </section>
-
-          <div className="bio">
-            <p>
-              I&apos;m Juan Melo, a software engineer passionate about open source and full stack
-              development, always trying to build new things.
-            </p>
-            <p>
-              These days I&apos;m focused on building <a href="#">Venator UI</a>, a React +
-              TypeScript component system, and exploring new ideas around personal tooling and
-              automation.
-            </p>
-            <p>
-              I'm particularly interested in designing systems and architectures, building long-term, 
-              scalable solutions, and shaping them into reusable tools and packages.
-            </p>     
+        <section className="row">
+          <h2 className="row-label">building →</h2>
+          <div className="row-body">
+            <ul className="chips">
+              <li><a className="chip" href="#"><Image className="chip-icon" src="/logos/venator-favicon-32.png" width={18} height={18} alt="" />Venator UI</a></li>
+              <li><a className="chip" href="#"><Image className="chip-icon" src="/logos/enclave-favicon-32.png" width={18} height={18} alt="" />Enclave</a></li>
+            </ul>
           </div>
+        </section>
 
-        </main>
-      </div>
-
-      <footer>
-        <div className="footer-inner">
-          <span className="footer-label">Find me on →</span>
-          <div className="footer-links">
-            <a
-              href="https://github.com/jmelop"
-              className="footer-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubSVG />
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/jmelop"
-              className="footer-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkedInSVG />
-              LinkedIn
-            </a>
-            <a
-              href="https://x.com/jmelop_"
-              className="footer-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <TwitterSVG />
-              Twitter
-            </a>
-            <a href="mailto:jmelopdev@gmail.com" className="footer-btn">
-              <EmailSVG />
-              email
-            </a>
+        <section className="row row--tight">
+          <h2 className="row-label">published →</h2>
+          <div className="row-body">
+            <ul className="chips">
+              <li><a className="chip" href="#"><Image className="chip-icon" src="/logos/npm-favicon-32.png" width={14} height={14} alt="" />es-regional-holidays</a></li>
+            </ul>
           </div>
-        </div>
-      </footer>
+        </section>
+
+        <section className="row">
+          <h2 className="row-label">about</h2>
+          <div className="row-body prose">
+            <p>I&apos;m Juan Melo, a software engineer passionate about open source, who enjoys building things from scratch and experimenting with new ideas.</p>
+            <p>These days I&apos;m focused on building <a className="link" href="#">Venator UI</a>, a React + TypeScript component system, and exploring new ideas around personal tooling and automation.</p>
+            <p>I&apos;m particularly interested in designing systems and architectures, building long-term scalable solutions, and shaping them into reusable tools and packages.</p>
+          </div>
+        </section>
+
+        <section className="row">
+          <h2 className="row-label">now →</h2>
+          <div className="row-body">
+            <ol className="now-list">
+              <li><span className="now-num">01</span><span>Refactoring Venator UI design tokens and base styles.</span></li>
+              <li><span className="now-num">02</span><span>Expanding Venator archetypes with new component patterns.</span></li>
+              <li><span className="now-num">03</span><span>Drafting a post on concurrent loaders in Angular with RxJS.</span></li>
+            </ol>
+          </div>
+        </section>
+
+        <section className="row" hidden>
+          <div className="row-body">
+            <ul className="posts">
+              <li><a className="post" href="#">
+                <span className="post-title">A pragmatic guide to component variants</span>
+                <span className="post-meta">2026 · 04 <span className="dot-sep">·</span> 8 min</span>
+              </a></li>
+              <li><a className="post" href="#">
+                <span className="post-title">Why I rebuilt my portfolio (again)</span>
+                <span className="post-meta">2026 · 02 <span className="dot-sep">·</span> 4 min</span>
+              </a></li>
+              <li><a className="post" href="#">
+                <span className="post-title">Tokens, themes, and the gap between them</span>
+                <span className="post-meta">2025 · 11 <span className="dot-sep">·</span> 12 min</span>
+              </a></li>
+            </ul>
+            <Link className="all-posts" href="/writing">
+              All posts
+              <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </Link>
+          </div>
+        </section>
+
+        <section className="row row--last">
+          <h2 className="row-label">find me</h2>
+          <div className="row-body">
+            <ul className="contacts">
+              <li>
+                <a className="contact" href="https://github.com/jmelop" target="_blank" rel="noopener noreferrer">
+                  <GitHubSVG width={13} height={13} />GitHub
+                </a>
+              </li>
+              <li>
+                <a className="contact" href="https://linkedin.com/in/jmelop" target="_blank" rel="noopener noreferrer">
+                  <LinkedInSVG width={13} height={13} />LinkedIn
+                </a>
+              </li>
+              <li>
+                <a className="contact" href="https://x.com/jmelop_" target="_blank" rel="noopener noreferrer">
+                  <TwitterSVG width={13} height={13} />Twitter
+                </a>
+              </li>
+              <li>
+                <a className="contact" href="mailto:juanmlstm@gmail.com">
+                  <EmailSVG />email
+                </a>
+              </li>
+            </ul>
+          <p className="find-me-note">Or mail me at <code className="find-me-code">jmelopdev@gmail.com</code></p>
+          </div>
+        </section>
+
+        <footer className="foot">
+          <div className="foot-meta">
+            <span>© 2026 jmelop</span>
+            <p className="status">
+              <span className="dot"></span>
+              <span className="status-text" data-state="building">Building Venator UI</span>
+              <span className="status-sep">·</span>
+              <span className="status-text" data-state="coords">LPA · 28.1°N 15.4°W</span>
+            </p>
+          </div>
+        </footer>
+      </main>
     </>
   );
 }
