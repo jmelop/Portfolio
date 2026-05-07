@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import ParticleBackground from '../components/ParticleBackground';
 
 const GitHubSVG = ({ width = 15, height = 15 }: { width?: number; height?: number }) => (
   <svg viewBox="0 0 16 16" width={width} height={height} fill="currentColor">
@@ -38,6 +39,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
 
+      <ParticleBackground />
       <nav className="nav">
         <Link className="brand" href="/"><span className="brand-accent">~/</span>jmelop</Link>
         <div className="nav-right">
