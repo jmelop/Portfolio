@@ -285,7 +285,7 @@ export default function Projects() {
                   <p className="pj-desc">npm package for Spanish regional holidays: national, autonomous community and local feast days. Fully typed.</p>
                 </div>
                 <div className="pj-tags">
-                  <NpmBadge version="v1.3.0" />
+                  <NpmBadge version="v0.2.1" />
                   <ArrowSVG />
                 </div>
               </a>
