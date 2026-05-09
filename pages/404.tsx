@@ -24,7 +24,7 @@ export default function NotFound() {
   return (
     <>
       <Head>
-        <title>404 · jmelop</title>
+        <title>404 · Juan Melo · jmelop</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

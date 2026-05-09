@@ -52,7 +52,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects · jmelop</title>
+        <title>Projects · Juan Melo · jmelop</title>
         <meta name="description" content="Open-source projects and packages by Juan Melo." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
