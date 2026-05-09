@@ -129,7 +129,7 @@ export default function Projects() {
                   <p className="pj-desc">Core UI components: buttons, inputs, overlays. The base layer everything else builds on.</p>
                 </div>
                 <div className="pj-tags">
-                  <NpmBadge version="v2.4.1" />
+                  <NpmBadge version="v0.1.6" />
                   <ArrowSVG />
                 </div>
               </a>
@@ -152,7 +152,7 @@ export default function Projects() {
                   <p className="pj-desc">Design token system covering colors, type, spacing and motion. Exported as CSS, JS and Tailwind presets.</p>
                 </div>
                 <div className="pj-tags">
-                  <NpmBadge version="v1.8.0" />
+                  <NpmBadge version="v0.1.3" />
                   <ArrowSVG />
                 </div>
               </a>
@@ -176,7 +176,7 @@ export default function Projects() {
                   <p className="pj-desc">Higher-level UI patterns: auth flows, data tables, settings, command palettes.</p>
                 </div>
                 <div className="pj-tags">
-                  <NpmBadge version="v0.9.4" />
+                  <NpmBadge version="v0.1.4" />
                   <ArrowSVG />
                 </div>
               </a>
@@ -199,7 +199,7 @@ export default function Projects() {
                   <p className="pj-desc">Complete app architectures via CLI. Admin, dashboard and marketing setups scaffolded in seconds.</p>
                 </div>
                 <div className="pj-tags">
-                  <NpmBadge version="v0.6.2" />
+                  <NpmBadge version="v0.1.12" />
                   <ArrowSVG />
                 </div>
               </a>
@@ -221,7 +221,7 @@ export default function Projects() {
                   <p className="pj-desc">Command-line tool for deploying archetypes and patterns. Run <code style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--text-soft)' }}>npx venator add ...</code> to get started.</p>
                 </div>
                 <div className="pj-tags">
-                  <NpmBadge version="v1.2.7" />
+                  <NpmBadge version="v0.1.5" />
                   <ArrowSVG />
                 </div>
               </a>
