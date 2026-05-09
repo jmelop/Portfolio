@@ -78,8 +78,8 @@ export default function Home() {
           <h2 className="row-label">building →</h2>
           <div className="row-body">
             <ul className="chips">
-              <li><a className="chip" href="#"><Image className="chip-icon" src="/logos/venator-favicon-32.png" width={18} height={18} alt="" />Venator UI</a></li>
-              <li><a className="chip" href="#"><Image className="chip-icon" src="/logos/enclave-favicon-32.png" width={18} height={18} alt="" />Enclave</a></li>
+              <li><a className="chip" href="https://venatorui.com" target="_blank" rel="noopener noreferrer"><Image className="chip-icon" src="/logos/venator-favicon-32.png" width={18} height={18} alt="" />Venator UI</a></li>
+              <li><a className="chip" href="https://github.com/jmelop/enclave" target="_blank" rel="noopener noreferrer"><Image className="chip-icon" src="/logos/enclave-favicon-32.png" width={18} height={18} alt="" />Enclave</a></li>
             </ul>
           </div>
         </section>
@@ -88,7 +88,7 @@ export default function Home() {
           <h2 className="row-label">published →</h2>
           <div className="row-body">
             <ul className="chips">
-              <li><a className="chip" href="#"><Image className="chip-icon" src="/logos/npm-favicon-32.png" width={14} height={14} alt="" />es-regional-holidays</a></li>
+              <li><a className="chip" href="https://www.npmjs.com/package/es-regional-holidays" target="_blank" rel="noopener noreferrer"><Image className="chip-icon" src="/logos/npm-favicon-32.png" width={14} height={14} alt="" />es-regional-holidays</a></li>
             </ul>
           </div>
         </section>
@@ -97,7 +97,7 @@ export default function Home() {
           <h2 className="row-label">about</h2>
           <div className="row-body prose">
             <p>I&apos;m Juan Melo, a software engineer passionate about open source, who enjoys building things from scratch and experimenting with new ideas.</p>
-            <p>These days I&apos;m focused on building <a className="link" href="#">Venator UI</a>, a React + TypeScript component system, and exploring new ideas around personal tooling and automation.</p>
+            <p>These days I&apos;m focused on building <a className="link" href="https://venatorui.com" target="_blank" rel="noopener noreferrer">Venator UI</a>, a React + TypeScript component system, and exploring new ideas around personal tooling and automation.</p>
             <p>I&apos;m particularly interested in designing systems and architectures, building long-term scalable solutions, and shaping them into reusable tools and packages.</p>
           </div>
         </section>
@@ -158,7 +158,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a className="contact" href="mailto:juanmlstm@gmail.com">
+                <a className="contact" href="mailto:jmelopdev@gmail.com">
                   <EmailSVG />email
                 </a>
               </li>
