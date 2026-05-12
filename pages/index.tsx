@@ -48,7 +48,7 @@ export default function Home() {
       <main className="page">
         <header className="hero">
           <h1 className="hero-title">Juan Melo</h1>
-          <p className="hero-tagline">Software Engineer focused on front-end architecture, open-source packages and developer tooling.</p>
+          <p className="hero-tagline">Software Engineer focused on developer tooling, open-source packages and scalable front-ends.</p>
         </header>
 
         <section className="row">
