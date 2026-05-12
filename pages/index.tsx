@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button, Separator, Tooltip } from '@venator-ui/ui';
 import ParticleBackground from '../components/ParticleBackground';
 import { GitHubIcon, LinkedInIcon, TwitterIcon, EmailIcon } from '../components/icons';
 
@@ -24,22 +25,28 @@ export default function Home() {
             <li><Link className="nav-link is-active" href="/">Home</Link></li>
             <li><Link className="nav-link" href="/projects">Projects</Link></li>
           </ul>
-          <span className="nav-divider"></span>
+          <Separator orientation="vertical" className="nav-divider" />
           <ul className="nav-socials">
             <li>
-              <a href="https://github.com/jmelop" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                <GitHubIcon />
-              </a>
+              <Tooltip content="GitHub" side="bottom">
+                <a href="https://github.com/jmelop" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <GitHubIcon />
+                </a>
+              </Tooltip>
             </li>
             <li>
-              <a href="https://linkedin.com/in/jmelop" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon />
-              </a>
+              <Tooltip content="LinkedIn" side="bottom">
+                <a href="https://linkedin.com/in/jmelop" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                  <LinkedInIcon />
+                </a>
+              </Tooltip>
             </li>
             <li>
-              <a href="https://x.com/jmelop_" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-                <TwitterIcon />
-              </a>
+              <Tooltip content="Twitter" side="bottom">
+                <a href="https://x.com/jmelop_" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                  <TwitterIcon />
+                </a>
+              </Tooltip>
             </li>
           </ul>
         </div>
@@ -120,24 +127,24 @@ export default function Home() {
           <div className="row-body">
             <ul className="contacts">
               <li>
-                <a className="contact" href="https://github.com/jmelop" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="contact" onClick={() => window.open('https://github.com/jmelop', '_blank', 'noopener,noreferrer')}>
                   <GitHubIcon width={13} height={13} />GitHub
-                </a>
+                </Button>
               </li>
               <li>
-                <a className="contact" href="https://linkedin.com/in/jmelop" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="contact" onClick={() => window.open('https://linkedin.com/in/jmelop', '_blank', 'noopener,noreferrer')}>
                   <LinkedInIcon width={13} height={13} />LinkedIn
-                </a>
+                </Button>
               </li>
               <li>
-                <a className="contact" href="https://x.com/jmelop_" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="contact" onClick={() => window.open('https://x.com/jmelop_', '_blank', 'noopener,noreferrer')}>
                   <TwitterIcon width={13} height={13} />Twitter
-                </a>
+                </Button>
               </li>
               <li>
-                <a className="contact" href="mailto:jmelopdev@gmail.com">
+                <Button variant="ghost" size="sm" className="contact" onClick={() => { window.location.href = 'mailto:jmelopdev@gmail.com'; }}>
                   <EmailIcon />email
-                </a>
+                </Button>
               </li>
             </ul>
           <p className="find-me-note">Or mail me at <code className="find-me-code">jmelopdev@gmail.com</code></p>
