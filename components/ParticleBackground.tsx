@@ -10,7 +10,7 @@ interface Particle {
 
 const PARTICLE_COUNT = 130;
 const MAX_SPEED = 0.1;
-const COLOR = 'rgba(255, 255, 255, 0.28)';
+const COLOR = 'rgba(255, 255, 255, 0.18)';
 
 export default function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
