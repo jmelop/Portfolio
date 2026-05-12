@@ -8,9 +8,9 @@ interface Particle {
   radius: number;
 }
 
-const PARTICLE_COUNT = 80;
+const PARTICLE_COUNT = 130;
 const MAX_SPEED = 0.1;
-const COLOR = 'rgba(255, 255, 255, 0.15)';
+const COLOR = 'rgba(255, 255, 255, 0.18)';
 
 export default function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -26,22 +26,27 @@ export default function ParticleBackground() {
 
     function initParticles() {
       particles = Array.from({ length: PARTICLE_COUNT }, () => ({
-        x: Math.random() * canvas!.width,
-        y: 60 + Math.random() * (canvas!.height - 60),
+        x: Math.random() * window.innerWidth,
+        y: 60 + Math.random() * (window.innerHeight - 60),
         vx: (Math.random() - 0.5) * MAX_SPEED * 2,
         vy: (Math.random() - 0.5) * MAX_SPEED * 2,
-        radius: 0.3 + Math.random() * 0.9,
+        radius: 0.6 + Math.random() * 1.2,
       }));
     }
 
     function resize() {
-      canvas!.width = window.innerWidth;
-      canvas!.height = window.innerHeight;
+      const dpr = window.devicePixelRatio || 1;
+      canvas!.width = window.innerWidth * dpr;
+      canvas!.height = window.innerHeight * dpr;
+      canvas!.style.width = window.innerWidth + 'px';
+      canvas!.style.height = window.innerHeight + 'px';
+      ctx!.scale(dpr, dpr);
       initParticles();
     }
 
     function tick() {
-      const { width, height } = canvas!;
+      const width = window.innerWidth;
+      const height = window.innerHeight;
       ctx!.clearRect(0, 0, width, height);
       ctx!.fillStyle = COLOR;
 
