@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { Separator, Tooltip } from '@venator-ui/ui';
 import ParticleBackground from '../components/ParticleBackground';
 import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../components/icons';
 
@@ -52,22 +53,28 @@ export default function Projects() {
             <li><Link className="nav-link" href="/">Home</Link></li>
             <li><Link className="nav-link is-active" href="/projects">Projects</Link></li>
           </ul>
-          <span className="nav-divider"></span>
+          <Separator orientation="vertical" className="nav-divider" />
           <ul className="nav-socials">
             <li>
-              <a href="https://github.com/jmelop" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                <GitHubIcon />
-              </a>
+              <Tooltip content="GitHub" side="bottom">
+                <a href="https://github.com/jmelop" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <GitHubIcon />
+                </a>
+              </Tooltip>
             </li>
             <li>
-              <a href="https://linkedin.com/in/jmelop" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon />
-              </a>
+              <Tooltip content="LinkedIn" side="bottom">
+                <a href="https://linkedin.com/in/jmelop" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                  <LinkedInIcon />
+                </a>
+              </Tooltip>
             </li>
             <li>
-              <a href="https://x.com/jmelop_" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-                <TwitterIcon />
-              </a>
+              <Tooltip content="Twitter" side="bottom">
+                <a href="https://x.com/jmelop_" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                  <TwitterIcon />
+                </a>
+              </Tooltip>
             </li>
           </ul>
         </div>
