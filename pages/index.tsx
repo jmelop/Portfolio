@@ -155,9 +155,6 @@ export default function Home() {
           <div className="foot-meta">
             <span>© 2026 jmelop</span>
             <p className="status">
-              <span className="dot"></span>
-              <span className="status-text" data-state="building">Building Venator UI</span>
-              <span className="status-sep">·</span>
               <span className="status-text" data-state="coords">LPA · 28.1°N 15.4°W</span>
             </p>
           </div>
