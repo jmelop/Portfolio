@@ -247,7 +247,7 @@ export default function Projects() {
                 </div>
                 <div className="pj-meta">
                   <h3 className="pj-name">Enclave</h3>
-                  <p className="pj-desc">Modular self-hosted personal dashboard. Runs on a Raspberry Pi, tracks my calendar, server health and the weather.</p>
+                  <p className="pj-desc">Self-hosted personal ops dashboard. Built with Next.js, TypeScript and Venator UI. Modular app launcher with a CRT terminal aesthetic.</p>
                 </div>
                 <div className="pj-tags">
                   <GitHubBadge label="self-hosted" />
